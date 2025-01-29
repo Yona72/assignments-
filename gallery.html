@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #f5f5f5; */
+        }
+        #cap{
+            padding-left: 2rem;
+            font-size: x-large;
+            font-weight: bold;
+            
+
+        }
+        .nav ul{
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            column-gap: 50px;
+            align-items: center;
+            list-style-type: none;
+        }
+        .nav ul li{
+            font-size: 20px;
+            color: black;
+            font-size: x-large;
+        }
+        .nav ul li:hover{
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            /* height: auto;
+            width: auto;
+            display: flex;
+            justify-content: center; */
+        }
+        /* .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            
+            
+        }
+        .gallery img {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+        } */
+        .gallery {
+            margin-top: 4rem;
+            column-count: 3; 
+            column-gap: 10px; 
+        }
+
+        .gallery img {
+            width: 100%; 
+            max-width: 400px;
+            display: flex; 
+            margin-bottom: 10px; 
+            border-radius: 10px; 
+        }
+       .details{
+            position: absolute;
+            right: 1rem;
+            padding-right: 1rem;
+            /* box-shadow: 0 2px 5px gainsboro; */
+           
+           
+        }
+        #trending{
+            font-size: 17px;
+            font-weight: 400;
+            height: 45px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Video</li>
+                <li>Leaderboard</li>
+                <li>Challenges</li>
+            </ul>
+        </div>
+        <p id="cap">Free Stock Photos</p>
+        <div class="details">
+            <!-- <details>
+                <summary>Trending</summary>
+                <p>Trending</p>
+                <p>New</p>
+            </details> -->
+            <label for="items">
+                <select name="Trending" id="trending">
+                    <option value="">Trending</option>
+                    <option value="">New</option>
+                </select>
+            </label>
+        </div>
+        <!-- <br> -->
+    <div class="gallery">
+        <div class="item"><img src="https://images.pexels.com/photos/30319081/pexels-photo-30319081/free-photo-of-urban-garage-entrance-with-shadowy-tree.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="item"><img src="https://images.pexels.com/photos/28539583/pexels-photo-28539583/free-photo-of-majestic-mountain-peaks-at-sunrise.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="item"><img src="https://images.pexels.com/photos/25865246/pexels-photo-25865246/free-photo-of-back-view-of-a-woman-in-a-dress-standing-on-a-viewing-platform-overlooking-paris-france.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="item"><img src="https://images.pexels.com/photos/10803797/pexels-photo-10803797.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="item"><img src="https://images.pexels.com/photos/30243449/pexels-photo-30243449/free-photo-of-majestic-snow-covered-mountain-peaks-in-winter.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="item"><img src="https://images.pexels.com/photos/30165563/pexels-photo-30165563/free-photo-of-majestic-mountain-silhouette-at-purple-dusk.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+    </div>
+    </div>
+</body>
+
+</html>
